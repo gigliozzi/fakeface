@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description:
     "FakeFace e um estudio de face swap alimentado por IA com upload guiado e preview instantaneo.",
   icons: {
-    icon: "/fakeface-favicon.svg",
-    shortcut: "/fakeface-favicon.svg",
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
   },
 };
 
