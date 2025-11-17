@@ -23,19 +23,19 @@ const heroStats = [
 
 const highlights = [
   {
-    title: "Upload guiado",
+    title: "Fluxo guiado de upload",
     description:
-      "Estados visuais indicam quando cada foto está pronta para o processamento, reduzindo erros.",
+      "Indicadores deixam claro quando cada foto esta pronta, evitando tentativas frustradas antes do processamento.",
   },
   {
-    title: "Preview elegante",
+    title: "Preview em tempo real",
     description:
-      "O resultado ganha destaque com moldura em vidro fosco e opção de download sem sair da página.",
+      "O painel de visualizacao mostra o antes e depois sem sair da tela, com download em um clique.",
   },
   {
-    title: "Narrativa clara",
+    title: "Seguro e privado",
     description:
-      "Badges, passos e microcopy em português deixam o fluxo intuitivo para novos usuários.",
+      "Uploads via HTTPS sao descartados apos a geracao, garantindo que o controle das suas imagens fique com voce.",
   },
 ];
 
@@ -260,11 +260,11 @@ export default function Home() {
 
         <section className="mx-auto mt-16 max-w-6xl rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur">
           <div className="mb-8 flex flex-col gap-2">
-            <p className="text-xs uppercase tracking-[0.4em] text-indigo-200">Detalhes do redesign</p>
-            <h2 className="text-2xl font-semibold text-white">O que mudou nesta versão</h2>
+            <p className="text-xs uppercase tracking-[0.4em] text-indigo-200">Beneficios principais</p>
+            <h2 className="text-2xl font-semibold text-white">Por que usar o FakeFace agora</h2>
             <p className="text-sm text-slate-300">
-              As melhorias deixam claro cada passo do fluxo, entregam foco ao preview e criam um
-              storytelling visual coerente com ferramentas modernas de IA.
+              A experiencia foi desenhada para acelerar experimentos com IA sem abandonar clareza ou privacidade.
+              Cada cartao abaixo reforca como transformamos o painel em uma ferramenta pronta para criadores e equipes.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
