@@ -170,7 +170,7 @@ export default function Home() {
               ))}
             </div>
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-indigo-900/30 backdrop-blur">
-              <p className="text-xs uppercase tracking-[0.4em] text-indigo-200">Passo a passo</p>
+              <h2 className="text-xs uppercase tracking-[0.4em] text-indigo-200">Passo a passo</h2>
               <ul className="mt-4 space-y-4">
                 {steps.map((step, index) => (
                   <li key={step.title} className="flex gap-3 text-sm text-slate-100">
@@ -178,7 +178,7 @@ export default function Home() {
                       {index + 1}
                     </span>
                     <div>
-                      <p className="font-medium text-white">{step.title}</p>
+                      <h3 className="font-medium text-white">{step.title}</h3>
                       <p className="text-slate-300/90">{step.detail}</p>
                     </div>
                   </li>
@@ -258,7 +258,7 @@ export default function Home() {
                 <div className="mb-4 h-10 w-10 rounded-2xl bg-indigo-500/40 text-center text-2xl leading-10 text-white">
                   ✦
                 </div>
-                <p className="font-semibold text-white">{feature.title}</p>
+                <h3 className="font-semibold text-white">{feature.title}</h3>
                 <p className="mt-2 text-sm text-slate-300">{feature.description}</p>
               </div>
             ))}
