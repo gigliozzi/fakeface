@@ -37,6 +37,9 @@ export const metadata: Metadata = {
       "Uploads guiados, preview instantaneo e downloads em um painel inspirado em ferramentas profissionais.",
     images: ["/og-cover.png"],
   },
+  other: {
+    "fb:app_id": "1522561275635459",
+  },
 };
 
 export default function RootLayout({
