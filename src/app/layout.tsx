@@ -81,7 +81,34 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-slate-950 text-white`}>
+        <header className="border-b border-white/10 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+          <nav className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 text-sm text-slate-100">
+            <a href="/" className="font-semibold tracking-wide">FakeFace</a>
+            <div className="flex flex-wrap gap-4">
+              <a href="/#workflow" className="text-slate-300 hover:text-white">Passo a passo</a>
+              <a href="/#beneficios" className="text-slate-300 hover:text-white">Benefícios</a>
+              <a href="/sobre" className="text-slate-300 hover:text-white">Sobre</a>
+              <a href="/contato" className="text-slate-300 hover:text-white">Contato</a>
+            </div>
+          </nav>
+        </header>
+        {children}
+        <footer className="mt-16 border-t border-white/10 bg-slate-950">
+          <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-slate-300 md:flex-row md:items-center md:justify-between">
+            <div>
+              <p className="font-semibold text-white">FakeFace Studio</p>
+              <p className="text-xs text-slate-400">© {new Date().getFullYear()} — Todos os direitos reservados.</p>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <a className="hover:text-white" href="/sobre">Sobre</a>
+              <a className="hover:text-white" href="/privacidade">Privacidade</a>
+              <a className="hover:text-white" href="/termos">Termos</a>
+              <a className="hover:text-white" href="/contato">Contato</a>
+            </div>
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }

@@ -159,7 +159,7 @@ export default function Home() {
     <main className="relative min-h-screen overflow-hidden bg-slate-950 text-white">
       <BackgroundGradients />
       <div className="relative z-10 px-4 py-16 sm:px-6 lg:px-8">
-        <section className="mx-auto grid max-w-6xl items-start gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <section id="workflow" className="mx-auto grid max-w-6xl items-start gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-10">
             <BrandLockup />
             <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-200">
@@ -259,7 +259,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto mt-16 max-w-6xl rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur">
+        <section id="beneficios" className="mx-auto mt-16 max-w-6xl rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur">
           <div className="mb-8 flex flex-col gap-2">
             <p className="text-xs uppercase tracking-[0.4em] text-indigo-200">Beneficios principais</p>
             <h2 className="text-2xl font-semibold text-white">Por que usar o FakeFace agora</h2>
