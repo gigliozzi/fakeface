@@ -54,6 +54,24 @@ const steps = [
   },
 ];
 
+const faqs = [
+  {
+    question: "Preciso instalar algo para usar o FakeFace?",
+    answer:
+      "Nao. Todo o processamento acontece em servicos de IA conectados via API e o painel roda direto no navegador.",
+  },
+  {
+    question: "Quais tipos de arquivo sao aceitos?",
+    answer:
+      "Aceitamos formatos populares como JPG, PNG e WEBP. Recomendamos imagens acima de 512px para melhor resultado.",
+  },
+  {
+    question: "O que acontece com minhas imagens depois do upload?",
+    answer:
+      "As fotos sao enviadas por HTTPS e sao descartadas apos o processamento. Nada e salvo no servidor.",
+  },
+];
+
 export default function Home() {
   const [original, setOriginal] = useState<File | null>(null);
   const [target, setTarget] = useState<File | null>(null);
@@ -262,6 +280,35 @@ export default function Home() {
                 <p className="mt-2 text-sm text-slate-300">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="mx-auto mt-16 max-w-5xl space-y-10 text-slate-200">
+          <div className="rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur">
+            <h2 className="text-2xl font-semibold text-white">Por que os criadores escolhem o FakeFace</h2>
+            <p className="mt-4 text-sm text-slate-300">
+              Construimos o fluxo pensando em quem precisa validar ideias rapidamente, apresentar conceitos
+              para clientes ou produzir conteudo divertido sem abrir suites complexas. O upload guiado evita
+              duvida sobre formatos, enquanto o painel de preview mostra exatamente o que a IA esta entregando
+              antes de qualquer download.
+            </p>
+            <p className="mt-3 text-sm text-slate-300">
+              Para quem quer integrar com automacoes, a API do FakeFace pode ser chamada direto pelo endpoint
+              ou adaptada em ferramentas sem codigo. Isso abre espaco para experimentos com marketing, social
+              e prototipos de video mesmo em equipes pequenas.
+            </p>
+          </div>
+
+          <div className="rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur">
+            <h2 className="text-2xl font-semibold text-white">Perguntas frequentes</h2>
+            <dl className="mt-6 space-y-6">
+              {faqs.map((faq) => (
+                <div key={faq.question}>
+                  <dt className="text-lg font-semibold text-white">{faq.question}</dt>
+                  <dd className="mt-2 text-sm text-slate-300">{faq.answer}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
       </div>

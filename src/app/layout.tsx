@@ -4,11 +4,28 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "FakeFace",
+  applicationCategory: "MultimediaApplication",
+  operatingSystem: "Web",
+  url: "https://www.fakeface.com.br",
+  description:
+    "FakeFace oferece troca de rostos com IA, upload guiado e preview instantaneo direto no navegador.",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  sameAs: ["https://www.fakeface.com.br"],
+} as const;
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.fakeface.com.br"),
   title: "FakeFace",
   description:
-    "FakeFace e um estudio de face swap alimentado por IA com upload guiado e preview instantaneo.",
+    "FakeFace e uma ferramenta de face swap online com IA, upload guiado, preview instantaneo e download rapido das imagens geradas.",
   alternates: {
     canonical: "https://www.fakeface.com.br",
   },
@@ -57,6 +74,11 @@ export default function RootLayout({
           async
           crossOrigin="anonymous"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9724425381463085"
+        />
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
       <body className={inter.className}>{children}</body>
