@@ -1,0 +1,24 @@
+<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">FakeFace logo</title>
+  <desc id="desc">Ícone de máscara dividida simbolizando a troca de rostos</desc>
+  <defs>
+    <linearGradient id="split" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <clipPath id="maskShape">
+      <path d="M40 8c-12 8-20 22-20 32s8 24 20 32l20 8 20-8c12-8 20-22 20-32s-8-24-20-32L60 0 40 8z"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(20,8)">
+    <path d="M20 0c-12 8-20 22-20 32s8 24 20 32l20 8 20-8c12-8 20-22 20-32S72 8 60 0L40 -8 20 0z" fill="#0f172a" opacity="0.4"/>
+    <g clip-path="url(#maskShape)">
+      <rect x="0" y="-8" width="80" height="80" fill="url(#split)"/>
+      <path d="M40-8v80" stroke="#ffffff" stroke-opacity="0.6" stroke-width="3"/>
+      <circle cx="48" cy="30" r="12" fill="#0f172a" opacity="0.25"/>
+    </g>
+    <path d="M40 10c-8 0-15 7-15 16 0 12 4 22 15 30 11-8 15-18 15-30 0-9-7-16-15-16z" fill="#fff" fill-opacity="0.85"/>
+  </g>
+  <text x="120" y="36" font-family="Segoe UI, Inter, sans-serif" font-size="26" font-weight="600" fill="#F8FAFC">FakeFace</text>
+  <text x="120" y="58" font-family="Segoe UI, Inter, sans-serif" font-size="14" fill="#A5B4FC" letter-spacing="0.3em">STUDIO</text>
+</svg>

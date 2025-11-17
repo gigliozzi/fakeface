@@ -161,6 +161,7 @@ export default function Home() {
       <div className="relative z-10 px-4 py-16 sm:px-6 lg:px-8">
         <section className="mx-auto grid max-w-6xl items-start gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-10">
+            <BrandLockup />
             <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-200">
               <span className="h-2 w-2 rounded-full bg-indigo-400" />
               FakeFace 3.0
@@ -313,6 +314,24 @@ export default function Home() {
         </section>
       </div>
     </main>
+  );
+}
+
+function BrandLockup() {
+  return (
+    <div className="flex flex-wrap items-center gap-4">
+      <Image
+        src="/logo-mask.svg"
+        alt="Logotipo do FakeFace"
+        width={200}
+        height={80}
+        priority
+        className="h-auto w-auto max-w-[220px]"
+      />
+      <p className="text-sm text-slate-300">
+        Plataforma de face swap com IA para criadores, agências e entusiastas.
+      </p>
+    </div>
   );
 }
 
